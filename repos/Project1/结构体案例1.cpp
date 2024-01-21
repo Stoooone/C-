@@ -1,26 +1,26 @@
-//#include <iostream>
+ï»¿//#include <iostream>
 //using namespace std;
 ////#include<ctime>
 //
-//// Ñ§ÉúµÄ½á¹¹µÚ¶¨Òå
+//// å­¦ç”Ÿçš„ç»“æ„ç¬¬å®šä¹‰
 //struct Student
 //{
-//	// ĞÕÃû
+//	// å§“å
 //	string sName;
-//	// ·ÖÊı
+//	// åˆ†æ•°
 //	int score;
 //};
 //
-////ÀÏÊ¦µÄ½á¹¹Ìå¶¨Òå
+////è€å¸ˆçš„ç»“æ„ä½“å®šä¹‰
 //struct Teacher
 //{
-//	// ĞÕÃû
+//	// å§“å
 //	string tName;
-//	// Ñ§ÉúÊı×é
+//	// å­¦ç”Ÿæ•°ç»„
 //	struct Student sArray[5];
 //};
 //
-//// ¸øÀÏÊ¦ºÍÑ§Éú¸³ÖµµÄº¯Êı
+//// ç»™è€å¸ˆå’Œå­¦ç”Ÿèµ‹å€¼çš„å‡½æ•°
 //void allocateSpace(struct Teacher tArray[], int len)
 //{
 //	string	nameSeed = "ABCDE";
@@ -29,7 +29,7 @@
 //		tArray[i].tName = "Teacher_";
 //		tArray[i].tName += nameSeed[i];
 //
-//		// Í¨¹ıÑ­»·¸øÃ¿ÃûÀÏÊ¦Ëù´øµÄÑ§Éú¸³Öµ
+//		// é€šè¿‡å¾ªç¯ç»™æ¯åè€å¸ˆæ‰€å¸¦çš„å­¦ç”Ÿèµ‹å€¼
 //		for (int j = 0; j < 5; j++)
 //		{
 //			tArray[i].sArray[j].sName = "Student_";
@@ -41,30 +41,30 @@
 //	}
 //}
 //
-////	´òÓ¡ËùÓĞĞÅÏ¢
+////	æ‰“å°æ‰€æœ‰ä¿¡æ¯
 //void printInfo(struct Teacher tArray[], int len)
 //{
 //	for (int i = 0; i < len; i++)
 //	{
-//		cout << "ÀÏÊ¦ĞÕÃû£º" << tArray[i].tName << endl;
+//		cout << "è€å¸ˆå§“åï¼š" << tArray[i].tName << endl;
 //		for (int j = 0; j < 5; j++)
 //		{
-//			cout << "\tÑ§ÉúĞÕÃû£º" << tArray[i].sArray[j].sName 
-//				<< " ¿¼ÊÔ·ÖÊı£º" << tArray[i].sArray[j].score << endl;
+//			cout << "\tå­¦ç”Ÿå§“åï¼š" << tArray[i].sArray[j].sName 
+//				<< " è€ƒè¯•åˆ†æ•°ï¼š" << tArray[i].sArray[j].score << endl;
 //		}
 //	}
 //}
 //
 //int main()
 //{
-//	// Ëæ»úÊıÖÖ×Ó
+//	// éšæœºæ•°ç§å­
 //	srand((unsigned int)time(NULL));
-//	// 1¡¢´´½¨3ÃûÀÏÊ¦µÄÊı×é
+//	// 1ã€åˆ›å»º3åè€å¸ˆçš„æ•°ç»„
 //	struct Teacher tArray[3];
-//	// 2¡¢Í¨¹ıº¯Êı¸ø3¸öÀÏÊ¦µÄĞÅÏ¢¸³Öµ£¬²¢¸øÀÏÊ¦´øµÄÑ§ÉúĞÅÏ¢¸³Öµ
+//	// 2ã€é€šè¿‡å‡½æ•°ç»™3ä¸ªè€å¸ˆçš„ä¿¡æ¯èµ‹å€¼ï¼Œå¹¶ç»™è€å¸ˆå¸¦çš„å­¦ç”Ÿä¿¡æ¯èµ‹å€¼
 //	int len = sizeof tArray / sizeof tArray[0];
 //	allocateSpace(tArray, len);
-//	// 3¡¢´òÓ¡ËùÓĞÀÏÊ¦¼°Ëù´øµÄÑ§ÉúĞÅÏ¢
+//	// 3ã€æ‰“å°æ‰€æœ‰è€å¸ˆåŠæ‰€å¸¦çš„å­¦ç”Ÿä¿¡æ¯
 //	printInfo(tArray, len);
 //	return 0;
 //}
